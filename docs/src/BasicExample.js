@@ -3,6 +3,6 @@ import Swoop from '../../lib';
 
 export default function BasicExample() {
   return (
-    <Swoop>Hallo</Swoop>
+    <Swoop>Hallo Der</Swoop>
   );
 }

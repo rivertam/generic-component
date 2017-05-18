@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { docco } from 'react-syntax-highlighter/dist/styles';
 import logo from './logo.svg';
 import './App.css';
 import BasicExample from './BasicExample';
+import BasicExampleText from '!raw!./BasicExample.js';
 
 class App extends Component {
   render() {
@@ -18,6 +21,9 @@ class App extends Component {
         <div>
           Basic Example:
 
+          <SyntaxHighlighter language="javascript" style={docco}>
+            {BasicExampleText}
+          </SyntaxHighlighter>
           <BasicExample />
         </div>
       </div>
