@@ -1,0 +1,30 @@
+{
+  "name": "react-swoop",
+  "version": "0.0.1",
+  "description": "Arctext for React",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib"
+  },
+  "author": "Ben Berman",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "cross-env": "^5.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-react": "^7.0.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
+  }
+}
