@@ -4,7 +4,8 @@
   "description": "Arctext for React",
   "main": "./lib/index.js",
   "scripts": {
-    "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib"
+    "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
+    "start": "cd docs && node scripts/start.js"
   },
   "author": "Ben Berman",
   "license": "MIT",
