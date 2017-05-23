@@ -1,8 +1,8 @@
 import React from 'react';
-import Swoop from 'react-swoop';
+import Swoop from '@rivertam/generic-component';
 
 export default function BasicExample() {
   return (
-    <Swoop>Hallo Der</Swoop>
+    <Swoop>Hi <span role="img" aria-label="heart">❤️</span></Swoop>
   );
 }
