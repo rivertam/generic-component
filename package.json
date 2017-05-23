@@ -1,7 +1,7 @@
 {
-  "name": "react-swoop",
+  "name": "generic-component",
   "version": "0.0.1",
-  "description": "Arctext for React",
+  "description": "A generic component boilerplate",
   "main": "./lib/index.js",
   "scripts": {
     "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
@@ -30,10 +30,8 @@
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
   },
-  "dependencies": {
-    "prop-types": "^15.5.10"
-  },
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
+    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0",
+    "prop-types": "^15.5.10"
   }
 }
