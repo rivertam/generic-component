@@ -1,13 +1,17 @@
 {
-  "name": "generic-component",
-  "version": "0.0.1",
+  "name": "@rivertam/generic-component",
+  "version": "0.0.3",
   "description": "A generic component boilerplate",
   "main": "./lib/index.js",
   "scripts": {
     "build": "rollup -c",
     "start": "concurrently --kill-others \"npm run start-docs\" \"npm run build:watch\"",
     "start-docs": "cd docs && node scripts/start.js",
-    "build:watch": "rollup -c -w"
+    "build:watch": "rollup -c -w",
+    "prepublishOnly": "(git diff-index --quiet HEAD -- && npm run build) || (echo \"ERROR PUBLISHING: You must commit your changes\" && exit 1)",
+    "build-docs": "cd docs && node scripts/build.js",
+    "postpublish": "npm run build-docs && npm run sync-docs",
+    "sync-docs": "git checkout gh-pages && git reset --hard master && cp -r docs/build/* . && git add . && git commit -m \"build docs \" && git push --force && git checkout master"
   },
   "author": "Ben Berman",
   "license": "MIT",
