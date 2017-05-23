@@ -1,6 +1,6 @@
 {
   "name": "@rivertam/generic-component",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A generic component boilerplate",
   "main": "./lib/index.js",
   "scripts": {
@@ -8,8 +8,8 @@
     "start": "concurrently --kill-others \"npm run start-docs\" \"npm run build:watch\"",
     "start-docs": "cd docs && node scripts/start.js",
     "build:watch": "rollup -c -w",
-    "predeploy": "(git diff-index --quiet HEAD -- && npm run build && npm run build-docs) || (echo \"ERROR PUBLISHING: You must commit your changes\" && exit 1)",
-    "deploy": "concurrently --kill-others \"gh-pages -d docs/build\" \"npm publish\"",
+    "prepublish": "(git diff-index --quiet HEAD -- && npm run build && npm run build-docs) || (echo \"ERROR PUBLISHING: You must commit your changes\" && exit 1)",
+    "publish": "gh-pages -d docs/build",
     "build-docs": "cd docs && node scripts/build.js"
   },
   "author": "Ben Berman",
