@@ -1,5 +1,5 @@
 import React from 'react';
-import Swoop from '../../lib';
+import Swoop from 'react-swoop';
 
 export default function BasicExample() {
   return (

@@ -1,6 +1,6 @@
 {
   "name": "@rivertam/generic-component",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "A generic component boilerplate",
   "main": "./lib/index.js",
   "scripts": {
@@ -30,7 +30,12 @@
     "css-loader": "^0.28.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
+    "eslint-config-react-app": "^1.0.3",
+    "eslint-plugin-flowtype": "^2.33.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.0.1",
+    "gh-pages": "^1.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "rollup": "^0.41.6",
@@ -38,13 +43,11 @@
     "rollup-watch": "^3.2.2",
     "style-loader": "^0.17.0",
     "webpack": "^2.5.1",
-    "webpack-dev-server": "^2.4.5",
-    "gh-pages": "^1.0.0"
+    "webpack-dev-server": "^2.4.5"
   },
   "peerDependencies": {
     "prop-types": "^15.5.10",
     "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

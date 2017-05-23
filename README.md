@@ -12,6 +12,7 @@ To get started,
   - Making changes to the docs and to the component will automatically refresh the docs
   - I outlined a nice way to include very basic and relatively unstyled examples, but you can do whatever you want -- the docs folder is just a create-react-app. I had to eject so I could use raw-loader to pull in the text of examples. I think it's worth it.
   - I left the jest stuff in the docs, but never use it. You can if you want. It might actually be a decent place to test the component.
+  - Edit docs/config/webpack.config.dev.js and docs/config/webpack.config.prod.js to use your component's project name in the import statements of the docs instead of "react-swoop"
 - Be sure to change the version in package.json!
   - The version in docs/package.json doesn't matter
 - `yarn publish`
