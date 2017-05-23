@@ -1,8 +1,11 @@
 {
   "name": "@rivertam/generic-component",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A generic component boilerplate",
   "main": "./lib/index.js",
+  "files": [
+    "./lib"
+  ],
   "scripts": {
     "build": "rollup -c",
     "start": "concurrently --kill-others \"npm run start-docs\" \"npm run build:watch\"",
