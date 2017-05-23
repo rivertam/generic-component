@@ -2,6 +2,8 @@
 
 This is a fairly minimal component boilerplate who aims to allow for quick iteration and automatically up-to-date documentation with support for Babel stage 0 and JSX. Uses Rollup to pack the component. Published modules only includes the build. Iterate with the doc pages, then automatically update the docs on publish.
 
+This project is an active sample. To see the distribution output, you can install [the npm package](https://www.npmjs.com/package/@rivertam/generic-component). To see the documentation output, you can go to [the live documentation page](https://rivertam.github.io/generic-component).
+
 To get started,
 
 - Edit package.json and changes all the relevant variables
