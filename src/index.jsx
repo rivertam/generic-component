@@ -6,7 +6,7 @@ export default function GenericComponent({ children }) {
     <div>{children} and other stuff</div>
   );
 }
-/*
+
 GenericComponent.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
@@ -17,4 +17,3 @@ GenericComponent.propTypes = {
 GenericComponent.defaultProps = {
   children: null,
 };
-*/
